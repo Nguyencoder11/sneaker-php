@@ -162,21 +162,21 @@ a {
 
 
 .social-container a {
-    border: 1px solid rgb(3, 128, 12);
+    border: 1px solid rgb(84, 3, 128);
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     margin: 0 5px;
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     transition: 333ms;
+    font-size: 1.4rem;
 }
 
 .social-container a:hover {
-    transform: rotateZ(13deg);
-    border: 1px solid rgb(0, 90, 34);
-    color: #007306 !important;
+    border: 1px solid rgb(0, 69, 180);
+    color: #004be0 !important;
 }
 
 .form-container input {
@@ -195,8 +195,8 @@ a {
 button {
     border-radius: 50px;
     box-shadow: 0 1px 1px;
-    border: 1px solid #00cf0a;
-    background: #00950a;
+    border: 1px solid #9100cf;
+    background: #680095;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
@@ -211,7 +211,7 @@ button:active {
 }
 
 button:hover {
-    background: #007a08;
+    background: #5b007a;
 }
 
 button:focus {
@@ -256,7 +256,7 @@ button.ghost {
 
 .overlay {
     background: #ff416c;
-    background: linear-gradient(to right, #0be04f, #007306) no-repeat 0 0 / cover;
+    background: linear-gradient(to right, #920be0, #510073) no-repeat 0 0 / cover;
     color: #fff;
     position: relative;
     left: -100%;

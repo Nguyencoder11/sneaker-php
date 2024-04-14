@@ -187,7 +187,7 @@ span i.fa-star {
 
 
 .footer {
-    background: linear-gradient(3500deg, #0be04f, #007306) no-repeat 0 0 / cover;
+    background: linear-gradient(3500deg, #990be0, #510073) no-repeat 0 0 / cover;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -195,7 +195,7 @@ span i.fa-star {
 
 /* refactored header code */
 .header {
-    background: linear-gradient(170deg, #0be04f, #007306) no-repeat 0 0 / cover;
+    background: linear-gradient(170deg, #7d0be0, #470073) no-repeat 0 0 / cover;
     /* position: fixed; */
     z-index: 100;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -304,18 +304,18 @@ span i.fa-star {
 
 .search__section button {
     border: unset;
-    background-color: #006000;
+    background-color: #4f006c;
     color: white;
     transition: all linear 0.1s;
 }
 
 .search__section button:hover {
-    background-color: rgb(84, 139, 1);
+    background-color: rgb(114, 1, 139);
 }
 
 .header__btn {
     border: 2px solid white;
-    background-color: rgb(0, 58, 0);
+    background-color: rgb(0, 67, 122);
     color: white;
     transition: all linear 0.1s;
     text-decoration: none;
@@ -323,7 +323,7 @@ span i.fa-star {
 
 .header__btn:hover {
     color: white;
-    background-color: rgb(73, 122, 0);
+    background-color: rgb(0, 104, 142);
 }
 
 .user__section {
