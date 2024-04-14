@@ -16,7 +16,7 @@
     }
 
     .title_event {
-        color: green;
+        color: rgb(89 0 167);
         font-weight: bold;
         font-size: 20px;
         margin-left: 10px;
