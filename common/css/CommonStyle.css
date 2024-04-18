@@ -1663,3 +1663,55 @@ body {
 .page-item .bg-success {
     background-color: rgba(113, 20, 183, 1) !important;
 }
+
+.sub__category {
+    border-radius: 3px !important;
+}
+
+@media only screen and (max-width: 480px) {
+    .container.flex {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    .header__logo {
+        height: 50px !important;
+    }
+
+    .search__input__wrapper {
+        justify-content: space-around;
+    }
+
+    .category__button p {
+        display: none;
+    }
+
+    .category__button i:first-child {
+        margin-right: 8px;
+    }
+
+    .search__section input {
+        min-width: 0;
+    }
+
+    .new_product .col-8 {
+        width: 35%;
+    }
+
+    .new_product .col-4 {
+        width: 65%;
+    }
+
+    .row.py-2 {
+        flex-direction: column-reverse;
+    }
+
+    .paganation-infor {
+        margin-left: 0 !important;
+        text-align: center !important;
+    }
+
+    .row.py-2 ul {
+        justify-content: center !important;
+    }
+}

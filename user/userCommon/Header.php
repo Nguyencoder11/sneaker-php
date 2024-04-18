@@ -1,4 +1,3 @@
-
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <?php
@@ -34,7 +33,7 @@ if (isset($_SESSION['userImage'])) {
 <header class="header w-100">
     <div class="container flex">
         <a href="UserIndex.php">
-            <img class="header__logo" style="height:70px; scale: 1.2;" src="./images/logo.svg" alt="logo">
+            <img class="header__logo" style="scale: 1.2;" src="./images/logo.svg" alt="logo">
         </a>
 
         <div class="flex-center justify-between py-2 w-100">
@@ -74,10 +73,11 @@ if (isset($_SESSION['userImage'])) {
                 </div>
                 <div class="search__section bg-white br-10 over-hidden px-1 flex-center">
                     <form method="POST" action="UserIndex.php?usingPage=search">
-                        <input class="p-2" type="text" placeholder="Tìm kiếm nhanh sản phẩm...?" name="keyword" value="<?php echo $keyword; ?>" />
+                        <input class="p-2" type="text" placeholder="Tìm kiếm sản phẩm..." name="keyword" value="<?php echo $keyword; ?>" />
                         <button type="submit" class="br-10 py-1 px-3 flex-grow-1" name="search">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
+                        <div class="search__history"></div>
                     </form>
                 </div>
             </div>
@@ -110,7 +110,7 @@ if (isset($_SESSION['userImage'])) {
                                     </li>
                                     <li class="sub__category__item w-100">
                                         <a style="display: block;" href="UserIndex.php?usingPage=account" class="w-100 p-2 py-3" style="text-decoration: none">
-                                        <i class="fa-solid fa-list mr-2 ml-0"></i>
+                                            <i class="fa-solid fa-list mr-2 ml-0"></i>
                                             Đơn hàng
                                         </a>
                                     </li>
@@ -120,7 +120,7 @@ if (isset($_SESSION['userImage'])) {
                                         Đăng xuất
                                     </li>
 
-            
+
 
                                 </ul>
                             </div>
@@ -152,7 +152,7 @@ if (isset($_SESSION['userImage'])) {
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title"> <i class="fa-solid fa-sign-out mr-2 ml-0"></i>Đăng xuất</h4>
-                <button type="button" class="btn-close btn-close-white"  data-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>Bạn có muốn đăng xuất không? </p>
@@ -169,8 +169,9 @@ if (isset($_SESSION['userImage'])) {
 
 <style>
     #myModal {
-        padding:  0;
+        padding: 0;
     }
+
     #myModal .modal-header {
         background-color: #28A745;
         /* Green background color */
@@ -186,8 +187,13 @@ if (isset($_SESSION['userImage'])) {
         border: 0;
         /* White text color */
     }
-    #myModal .btn-primary:hover{
+
+    #myModal .btn-primary:hover {
         background-color: coral;
-        
+
+    }
+
+    .header__logo {
+        height: 70px;
     }
 </style>

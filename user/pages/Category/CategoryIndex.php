@@ -194,9 +194,9 @@ $productByCategory = mysqli_query($connect, $findProductByCategoryIdSQL);
                                 date_default_timezone_set('Asia/Ho_Chi_Minh');
                                 $currentTime = date("Y-m-d H:i:s");
                                 if ($row_event['discount'] > 0 && $row_event['end_date'] > $currentTime) :
-                                    ?>
-                                        <div class="discount-overlay"><?php echo "-" . $row_event['discount'] . '%'; ?></div>
-                                    <?php endif; ?>
+                                ?>
+                                    <div class="discount-overlay"><?php echo "-" . $row_event['discount'] . '%'; ?></div>
+                                <?php endif; ?>
                             </div>
 
                             <h5 class="title_product pt-3"> <?php echo $row_pro['name'] ?></h5>
@@ -228,7 +228,7 @@ $productByCategory = mysqli_query($connect, $findProductByCategoryIdSQL);
             <?php
             }
             ?>
- 
+
 
 
         </ul>
