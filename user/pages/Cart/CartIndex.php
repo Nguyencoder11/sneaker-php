@@ -20,7 +20,7 @@ $cart_empty = mysqli_num_rows($show_cart_query) == 0; // Check if the cart is em
     }
 
     .title_event {
-        color: green;
+        color: rgb(89 0 167);
         font-weight: bold;
         font-size: 20px;
         margin-left: 10px;
@@ -46,7 +46,7 @@ $cart_empty = mysqli_num_rows($show_cart_query) == 0; // Check if the cart is em
     </div>
     <div class="show_new appCard">
         <div class="new_product">
-            <div class="row flex-center p-0 m-0" style="border-radius: 5px; background: linear-gradient(to bottom, #006400, #00FF00);">
+            <div class="row flex-center p-0 m-0" style="border-radius: 5px; background: linear-gradient(to bottom, #480064, #9500ff);">
                 <div class="col-8">
                     <span class="title_event mb-4">
                         <img src="https://tyhisneaker.com/wp-content/uploads/2021/08/giasoc.svg" alt="">
