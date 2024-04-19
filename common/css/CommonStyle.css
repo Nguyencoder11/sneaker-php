@@ -1668,7 +1668,8 @@ body {
     border-radius: 3px !important;
 }
 
-@media only screen and (max-width: 480px) {
+/* Mobile, smartphone screen */
+@media only screen and (max-width: 767.33px) {
     .container.flex {
         flex-direction: column !important;
         text-align: center !important;
@@ -1713,5 +1714,28 @@ body {
 
     .row.py-2 ul {
         justify-content: center !important;
+    }
+}
+
+/* Tablet, ipad screen */
+@media only screen and ((min-width: 768px) and (max-width: 992px)) {
+    .category__section {
+        margin-right: 16px !important;
+        padding-right: 0px !important;
+    }
+
+    .category__button i:first-child {
+        display: none;
+    }
+
+    .search__section input {
+        min-width: 330px !important;
+    }
+}
+
+/* PC, Desktop screen */
+@media screen and (min-width: 993px) {
+    .category__button i:first-child {
+        display: none;
     }
 }
